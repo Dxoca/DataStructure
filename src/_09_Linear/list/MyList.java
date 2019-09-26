@@ -24,7 +24,7 @@ public interface MyList {
     void update(int index, Object newElement);
 
     /**
-     * 当前列表中是否含有target这个元素
+     * 当前列表中是否含有target这个元素。
      *
      * @param target
      * @return
