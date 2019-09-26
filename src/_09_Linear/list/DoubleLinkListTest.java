@@ -2,52 +2,60 @@ package _09_Linear.list;
 
 import org.junit.Test;
 
-public class SingleLinkedListTest {
-    SingleLinkedList list = new SingleLinkedList();
+public class DoubleLinkListTest {
+    DoubleLinkList list = new DoubleLinkList();
+
 
     @Test
     public void add() {
         list.add("a");
         list.add("b");
         list.add("c");
+        list.add("d");
+        list.add("e");
         System.out.println(list);
     }
 
     @Test
     public void delete() {
         add();
+        System.out.println("deleteTest:");
         list.delete("a");
         System.out.println(list);
-        System.out.println("====");
+        list.delete("e");
+        System.out.println(list);
+    }
+
+    @Test
+    public void delete1() {
+        add();
+        System.out.println("deleteTestOfIndex:");
         list.delete(1);
         System.out.println(list);
-        list.delete(0);
-        System.out.println(list);
-        list.delete(0);
-        System.out.println(list);
-        list.delete(0);
+    }
+
+    @Test
+    public void update() {
+        add();
+        list.update(1,'D');
         System.out.println(list);
     }
 
     @Test
     public void contains() {
         add();
-        System.out.println(list.contains("a"));
+        System.out.println(list.contains("b"));
     }
 
     @Test
     public void at() {
         add();
-        System.out.println(list.at(0));
-        System.out.println(list.at(5));//null
+        System.out.println(list.at(4));
     }
 
     @Test
     public void indexOf() {
         add();
-        System.out.println(list.indexOf("a"));
-        System.out.println(list.indexOf("Dxoca"));
-        System.out.println(list.indexOf("c"));
+        System.out.println(list.indexOf("b"));
     }
-
 }

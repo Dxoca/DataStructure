@@ -1,40 +1,45 @@
 package _09_Linear.list;
 
-public class SingleLinkedList implements MyList {
-    private ListNode first;//两个指针交互
-    private ListNode last;
+public class DoubleLinkList implements MyList {
+    private ListNode first = new ListNode(null);//head
+    private ListNode last = new ListNode(null);//tail
     private int size;
 
+    public DoubleLinkList() {//初始化两个 亚元
+        first.next = last;
+        last.pre = first;
+    }
+
+    /**
+     * 加到 node：last 之前
+     * 维护四条线
+     *
+     * @param element
+     */
     @Override
     public void add(Object element) {
-        //新增一个节点
-        if (first == null) {//第一个节点
-            first = new ListNode(element);
-            last = first;//last==first 所以 first空 存储其他数据
-        } else {
-            //last.next指向新的节点
-            last.next = new ListNode(element);//第一次:last 等价于 first 同一个对象 所以 first.next=last.next or data
-            last = last.next;//现在的last是 新元素的节点 其中next等待下次 赋值//所以下一次就是 last.next.next
+        ListNode newNode = new ListNode(element);
 
-        }
-        size++;//链表存的元素cnt
+        last.pre.next = newNode;//倒数第二个指向新的
+        newNode.next = last;//新的尾巴 指向 最后一个
+        newNode.pre = last.pre;//新的头指向 上次最后一个的前面一个
+        last.pre = newNode;//最后一个的头 指向新的
+
+        size++;
 
     }
 
     @Override
     public void delete(Object element) {
-        ListNode p = first;
-        ListNode pre = null;//first的前驱为空
-        while (p != null) {
+        ListNode p = first.next;
+        while (p != last) {//终止于 亚元
             if (p.data.equals(element)) {//当前p 匹配到了
                 size--;
-                if (p == first) {//【特判】 头指针 为删除目标 特判
-                    first = first.next;
-                } else {
-                    pre.next = p.next;
-                }
+                p.pre.next = p.next;
+                p.next.pre = p.pre;
+                p.next = null;//便于被GC扫描 清除
+                p.pre = null;
             }
-            pre = p;//记录上一次比对的节点
             p = p.next;//滑动指向下一个节点
         }
     }
@@ -45,22 +50,18 @@ public class SingleLinkedList implements MyList {
             return;//索引超出 [0,size)
         }
         int i = 0;
-        ListNode p = first;
-        ListNode pre = null;//first的前驱为空
-        while (p != null) {
+        ListNode p = first.next;
+        while (p != last) {
             if (i == index) {
                 size--;
-                if (p == first) {// 【特判】头指针 为删除目标 特判
-                    first = first.next;
-                } else {
-                    pre.next = p.next;
-                }
-                break;//退出
-
+                p.pre.next = p.next;
+                p.next.pre = p.pre;
+                p.next = null;//便于被GC扫描 清除
+                p.pre = null;
+                break;
             }
-            pre = p;
-            p = p.next;
             i++;
+            p = p.next;
         }
 
     }
@@ -71,8 +72,8 @@ public class SingleLinkedList implements MyList {
             return;//索引超出 [0,size)
         }
         int i = 0;
-        ListNode p = first;
-        while (p != null) {
+        ListNode p = first.next;
+        while (p != last) {
             if (i == index) {
                 p.data = newElement;
                 break;
@@ -84,8 +85,8 @@ public class SingleLinkedList implements MyList {
 
     @Override
     public boolean contains(Object target) {
-        ListNode p = first;
-        while (p != null) {
+        ListNode p = first.next;
+        while (p != last) {
             if (p.data.equals(target)) {
                 return true;
             }
@@ -100,8 +101,8 @@ public class SingleLinkedList implements MyList {
             return null;
         }
         int i = 0;
-        ListNode p = first;
-        while (p != null) {
+        ListNode p = first.next;
+        while (p != last) {
             if (i == index) {
                 return p.data;
             }
@@ -113,9 +114,9 @@ public class SingleLinkedList implements MyList {
 
     @Override
     public int indexOf(Object element) {
-        ListNode p = first;
+        ListNode p = first.next;
         int i = 0;
-        while (p != null) {
+        while (p != last) {
             if (p.data.equals(element)) {
                 return i;
             }
@@ -128,13 +129,13 @@ public class SingleLinkedList implements MyList {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("[");
-        ListNode p = first;//头指针
-        while (p != null) {//当前数据不是空
-            sb.append(p.data).append(p.next != null ? "," : "");//判断是不是最后一个节点
+        ListNode p = first.next;
+        while (p != last) {
+            sb.append(p.data).append(p.next != last ? "," : "");
             p = p.next;
         }
         sb.append("]");//这么写的原因是 如果为空 就[] 不然写到while 里面 while不判定就gg
-        return "SingleLinkedList{" +
+        return "DoubleLinkList{" +
                 "elements=" + sb.toString() +
                 "size=" + size +
                 '}';

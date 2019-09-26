@@ -6,13 +6,25 @@ package _09_Linear.list;
  * 按位置 用顺序表
  */
 public interface MyList {
-    //新增一个元素
+    /**
+     * 删除相同元素
+     *
+     * @param element
+     */
     void add(Object element);
 
-    //删除相同元素
+    /**
+     * 删除相同元素
+     *
+     * @param element
+     */
     void delete(Object element);
 
-    //根据索引删除元素
+    /**
+     * 根据索引删除元素
+     *
+     * @param index
+     */
     void delete(int index);
 
     /**
