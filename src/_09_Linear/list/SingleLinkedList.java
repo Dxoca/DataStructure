@@ -12,6 +12,7 @@ public class SingleLinkedList implements MyList {
             first = new ListNode(element);
             last = first;//last==first 所以 first空 存储其他数据
         } else {
+            //last.next指向新的节点
             last.next = new ListNode(element);//第一次:last 等价于 first 同一个对象 所以 first.next=last.next or data
             last = last.next;//现在的last是 新元素的节点 其中next等待下次 赋值//所以下一次就是 last.next.next
 
@@ -40,6 +41,9 @@ public class SingleLinkedList implements MyList {
 
     @Override
     public void delete(int index) {
+        if (index < 0 || index >= size) {
+            return;//索引超出 [0,size)
+        }
         int i = 0;
         ListNode p = first;
         ListNode pre = null;//first的前驱为空
@@ -61,6 +65,9 @@ public class SingleLinkedList implements MyList {
 
     @Override
     public void update(int index, Object newElement) {
+        if (index < 0 || index >= size) {
+            return;//索引超出 [0,size)
+        }
         int i = 0;
         ListNode p = first;
         while (p != null) {
@@ -75,17 +82,45 @@ public class SingleLinkedList implements MyList {
 
     @Override
     public boolean contains(Object target) {
+        ListNode p = first;
+        while (p != null) {
+            if (p.data.equals(target)) {
+                return true;
+            }
+            p = p.next;
+        }
         return false;
     }
 
     @Override
     public Object at(int index) {
+        if (index < 0 && index >= size) {
+            return null;
+        }
+        int i = 0;
+        ListNode p = first;
+        while (p != null) {
+            if (i == index) {
+                return p.data;
+            }
+            p = p.next;
+            i++;
+        }
         return null;
     }
 
     @Override
     public int indexOf(Object element) {
-        return 0;
+        ListNode p = first;
+        int i = 0;
+        while (p != null) {
+            if (p.data.equals(element)) {
+                return i;
+            }
+            p = p.next;
+            i++;
+        }
+        return -1;
     }
 
     @Override
@@ -101,6 +136,5 @@ public class SingleLinkedList implements MyList {
                 "elements=" + sb.toString() +
                 "size=" + size +
                 '}';
-
     }
 }

@@ -2,6 +2,8 @@ package _09_Linear.list;
 
 /**
  * 线性表或者列表的接口定义
+ * 不稳定 用来链表
+ * 按位置 用顺序表
  */
 public interface MyList {
     //新增一个元素

@@ -11,6 +11,10 @@ public class MyArrayList implements MyList {
 
     private int capacity = 10;//容量
 
+    /**
+     *
+     * @param capacity
+     */
     public MyArrayList(int capacity) {
         this.capacity = capacity;
         elements = new Object[capacity];
