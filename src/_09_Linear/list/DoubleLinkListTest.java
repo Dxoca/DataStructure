@@ -1,12 +1,13 @@
 package _09_Linear.list;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class DoubleLinkListTest {
     DoubleLinkList list = new DoubleLinkList();
 
 
-    @Test
+    @Before
     public void add() {
         list.add("a");
         list.add("b");
@@ -55,7 +56,14 @@ public class DoubleLinkListTest {
 
     @Test
     public void indexOf() {
-        add();
-        System.out.println(list.indexOf("b"));
+
+        System.out.println(list.indexOf("e"));
+    }
+    @Test
+    public void iter(){
+        while (list.hasNext()){
+            Object next= list.next();
+            System.out.println(next);
+        }
     }
 }

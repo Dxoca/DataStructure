@@ -140,4 +140,18 @@ public class DoubleLinkList implements MyList {
                 "size=" + size +
                 '}';
     }
+
+    ListNode now = first;
+
+    @Override
+    public boolean hasNext() {
+        return now.next != last;
+    }
+
+    @Override
+    public Object next() {
+        ListNode next = now.next;
+        now = now.next;
+        return next.data;
+    }
 }

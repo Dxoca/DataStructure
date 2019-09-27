@@ -3,29 +3,20 @@ package _09_Linear.list;
 import org.junit.Test;
 
 public class MyArrayListTest {
-
+    MyArrayList<String> list = new MyArrayList<String>();
     @Test
-    public void test() {
-        MyArrayList list = new MyArrayList();
-        list.add("nike");
-        list.add("addidiaos");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("ab");
-        list.add("NB");
-        list.add("NB");
-        list.add("NB");
-        list.add("ss");
-        list.delete("ab");
+    public void add() {
+        list.add("asd");
+        list.add("va");
+        list.add("bab");
         System.out.println(list);
     }
+    @Test
+    public void iter(){
+        while (list.hasNext()){
+            Object next= list.next();//泛型测试
+            System.out.println(next);
+        }
+    }
+
 }
