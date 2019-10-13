@@ -22,7 +22,8 @@ public class ListDemo {
         list1.add(new Student(11, "bbhangsa"));
         list1.add(new Student(16, "xhangsa"));
         Collections.sort(list1, Comparator.comparingInt(Student::getAge));
-        /**
+//        Comparator.comparingInt(Student::getAge);
+        /** 朗姆大表达式
          *  Collections.sort(list1, (o1, o2) -> {
          *             return o1.getAge() - o2.getAge();
          *         }
@@ -39,7 +40,7 @@ public class ListDemo {
             System.out.println(stu);
         }
         System.out.println("++++++++++++++++++");
-        Iterator<Student> iterator = list1.iterator();
+        Iterator<Student> iterator = list1.iterator();//Iterator 迭代器
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
