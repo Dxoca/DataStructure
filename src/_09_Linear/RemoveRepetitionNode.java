@@ -13,7 +13,7 @@ public class RemoveRepetitionNode {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 6, 4, 2, 7, 6, 8, 1};
+        int arr[] = {1, 6, 4, 2, 7, 6, 6, 6};
         Node head = new Node(null);//哑元
         Node p = head;
         for (int i = 0; i < arr.length; i++) {
@@ -70,8 +70,9 @@ public class RemoveRepetitionNode {
                 pre.next = p1.next;//删除
             } else {
                 set.add(p1.value);//加入队列
+                pre=p1;
             }
-            pre = p1;
+            //pre=p1;
             p1 = p1.next;
         }
     }
