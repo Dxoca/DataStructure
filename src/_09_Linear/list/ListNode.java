@@ -2,12 +2,28 @@ package _09_Linear.list;
 
 /*节点*/
 
-public class ListNode {
-    Object data;//数据
-    ListNode next;//指向下一个节点的指针
-    ListNode pre;
+public class ListNode<T> {
+    T data;//数据
+    ListNode<T> next;//指向下一个节点的指针
+    ListNode<T> pre;
 
-    public ListNode(Object data) {//初始化构造器
+    public ListNode(T data) {//初始化构造器
         this.data = data;
+    }
+
+    public ListNode<T> getPre() {
+        return pre;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setNext(ListNode<T> next) {
+        this.next = next;
+    }
+
+    public void setPre(ListNode<T> pre) {
+        this.pre = pre;
     }
 }

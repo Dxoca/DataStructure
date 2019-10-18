@@ -1,3 +1,5 @@
+package _09_Linear.ListPractice;
+
 public class PlusLinkNode {
     static class Node {
         Object value;

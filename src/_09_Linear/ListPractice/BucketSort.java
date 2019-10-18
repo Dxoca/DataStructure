@@ -1,4 +1,4 @@
-package _09_Linear;
+package _09_Linear.ListPractice;
 
 import java.util.Arrays;
 
