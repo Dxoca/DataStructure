@@ -26,4 +26,8 @@ public class ListNode<T> {
     public void setPre(ListNode<T> pre) {
         this.pre = pre;
     }
+
+    public ListNode<T> getNext() {
+        return next;
+    }
 }
