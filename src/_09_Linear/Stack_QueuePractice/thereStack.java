@@ -132,8 +132,7 @@ public class thereStack {
         s.push(2, 90);
         s.push(2, 91);
         s.push(2, 92);
-
-
+        
         System.out.println(Arrays.toString(arr));
 
     }

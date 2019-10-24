@@ -9,6 +9,7 @@ public class MyStack<T> extends DoubleLinkList<T> implements IStack<T> {
     @Override
     public void push(T e) {
         add(e);
+
     }
 
     @Override
@@ -41,4 +42,5 @@ public class MyStack<T> extends DoubleLinkList<T> implements IStack<T> {
     public T peek() {
         return last.getPre().getData();
     }
+
 }
