@@ -8,7 +8,7 @@ public class MyHashSet<E> implements IHashSet<E> {
 
     @Override
     public void add(E key) {
-        map.put(key, null);
+        map.put(key, null);//只需要Key即可
     }
 
     @Override
@@ -36,7 +36,7 @@ public class MyHashSet<E> implements IHashSet<E> {
         return map.size();
     }
 
-    @Override
+    @Override//调用map的迭代器
     public Iterator<E> iterator() {
         Iterator<MyHashMap.Node> iter = map.iterator();
         return new Iterator<E>() {
