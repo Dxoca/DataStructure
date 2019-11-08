@@ -12,7 +12,7 @@ public interface IMap<K, V> {
      * @param key
      * @return
      */
-    boolean containsKey(Object key);
+    boolean containsKey(K key);
 
     /**
      * value是否已存在
@@ -20,7 +20,7 @@ public interface IMap<K, V> {
      * @param value
      * @return
      */
-    boolean containsValue(Object value);
+    boolean containsValue(V value);
 
     /**
      * 根据key获得valye
@@ -28,7 +28,7 @@ public interface IMap<K, V> {
      * @param key
      * @return
      */
-    V get(Object key);
+    V get(K key);
 
     /**
      * map  是否为空
@@ -52,7 +52,7 @@ public interface IMap<K, V> {
      * @param value
      * @return
      */
-    V put(K key, V value);
+    void put(K key, V value);
 
     /**
      * 把另外一个map中的所有键值对 存入到当前map中
@@ -66,7 +66,7 @@ public interface IMap<K, V> {
      * @param key
      * @return
      */
-    V remove(Object key);
+    V remove(K key);
 
     /**
      * 键值对的个数
