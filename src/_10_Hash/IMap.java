@@ -1,5 +1,7 @@
 package _10_Hash;
 
+import java.util.Iterator;
+
 public interface IMap<K, V> {
     /**
      * 清除所有键值对
@@ -43,7 +45,7 @@ public interface IMap<K, V> {
      *
      * @return
      */
-    K[] keySet();
+    MyHashSet<K> keySet();
 
     /**
      * 存入键值对
@@ -80,5 +82,10 @@ public interface IMap<K, V> {
      */
     V[] values();
 
+    /**
+     * 迭代器
+     * @return
+     */
+    Iterator<MyHashMap.Node> iterator();
 
 }

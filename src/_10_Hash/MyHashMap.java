@@ -1,5 +1,7 @@
 package _10_Hash;
 
+import java.util.Iterator;
+
 public class MyHashMap<K,V> implements IMap<K,V> {
 
     /**
@@ -8,7 +10,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
      * @param <K>
      * @param <V>
      */
-    private class Node<K, V> {
+    public static class Node<K, V> {
         K key;
         V value;
         Node next;
@@ -16,6 +18,14 @@ public class MyHashMap<K,V> implements IMap<K,V> {
         public Node(K key, V value) {
             this.key = key;
             this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "key=" + key +
+                    ", value=" + value +
+                    '}';
         }
     }
 
@@ -31,6 +41,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
         for (int i = 0; i < buckets.length; i++) {
             buckets[i] = null;
         }
+        size=0;
 
     }
 
@@ -94,8 +105,18 @@ public class MyHashMap<K,V> implements IMap<K,V> {
     }
 
     @Override
-    public K[] keySet() {
-        return null;
+    public MyHashSet<K> keySet() {
+        MyHashSet<K> set = new MyHashSet<>();
+        for (int i = 0; i < buckets.length; i++) {
+            if (buckets[i] != null) {
+                Node<K, V> p = buckets[i];
+                while (p != null) {
+                    set.add(p.key);
+                    p = p.next;
+                }
+            }
+        }
+        return set;
     }
 
     @Override
@@ -179,6 +200,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
                     } else {
                         pre.next = p.next;//原本 pre.next==p
                     }
+                    size--;
                     return p.value;
                 }
                 pre = p;
@@ -197,5 +219,37 @@ public class MyHashMap<K,V> implements IMap<K,V> {
     @Override
     public V[] values() {
         return null;
+    }
+
+    //内部类迭代器
+    private class MapIterator implements Iterator<MyHashMap.Node> {
+        int i = 0;
+        Node p = buckets[0];
+
+        @Override
+        public boolean hasNext() {
+            while (p == null && i < N) {
+                i++;
+                if (i == N)
+                    p = null;
+                else
+                    p = buckets[i];
+            }
+            //i是一个非空的桶子 p是链表头
+            return p != null;
+        }
+
+        @Override
+        public Node next() {
+            Node res = p;
+            p = p.next;
+            return res;
+        }
+    }
+
+    @Override
+    public Iterator<MyHashMap.Node> iterator() {
+        return new MapIterator();
+
     }
 }
