@@ -29,11 +29,23 @@ public class MyTree<E> implements ITree<E> {
         return x.parent;
     }
 
+    /**
+     * 返回节点的第一个孩子
+     *
+     * @param x
+     * @return
+     */
     @Override
     public TreeNode<E> getFirstChild(TreeNode<E> x) {
         return x.children.get(0);
     }
 
+    /**
+     * 返回我的右边的兄弟
+     *
+     * @param x
+     * @return
+     */
     @Override
     public TreeNode<E> getNextSibling(TreeNode<E> x) {
         //回溯 认祖归宗 先找到父亲 然后得到孩子列表 获取我的位置 +1就是兄弟的位置
@@ -51,7 +63,21 @@ public class MyTree<E> implements ITree<E> {
 //        }
     }
 
-    //x的高度 DFS
+    /**
+     * 返回整棵树的高度
+     *
+     * @return
+     */
+    public int getHeight() {
+        return getHeight(root);
+    }
+
+    /**
+     * 返回x的高度 DFS 递归算法
+     *
+     * @param x
+     * @return
+     */
     @Override
     public int getHeight(TreeNode<E> x) {
         if (x == null) {
@@ -63,15 +89,19 @@ public class MyTree<E> implements ITree<E> {
             }
             return h + 1;
         }
-
     }
 
+    /**
+     * 增加节点 父子关系
+     *
+     * @param parent
+     * @param child
+     */
     @Override
     public void insertChild(TreeNode<E> parent, TreeNode<E> child) {
         if (parent.children == null) {
             parent.children = new ArrayList<>();
         }
-
         //双向确定关系
         parent.children.add(child);
         child.parent=parent;
@@ -79,11 +109,30 @@ public class MyTree<E> implements ITree<E> {
         size++;
     }
 
+    /**
+     * 删除x节点的孩子
+     *
+     * @param x
+     * @param i
+     */
     @Override
     public void deleteChild(TreeNode<E> x, int i) {
+        System.out.println("adad");
+        int n = x.children.size();
+        for (int j = n-1; j >=0; j--) {
+            if(x.children.get(i)!=null){
+
+            }
+            System.out.println(x.children.remove(j));
+            size--;
+        }
 
     }
 
+    /**
+     * @param x
+     * @return
+     */
     @Override
     public List<TreeNode<E>> preOrder(TreeNode<E> x) {
         return null;
@@ -94,8 +143,14 @@ public class MyTree<E> implements ITree<E> {
         return null;
     }
 
+    /**
+     * bfs
+     *
+     * @param x
+     * @return
+     */
     @Override
-    public List<TreeNode<E>> levelrder(TreeNode<E> x) {
+    public List<TreeNode<E>> levelOrder(TreeNode<E> x) {
         return null;
     }
 }

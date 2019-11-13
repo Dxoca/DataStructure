@@ -14,7 +14,7 @@ public interface ITree<E> {
     void deleteChild(TreeNode<E>  x,int i);//删孩子 节点编号
     List<TreeNode<E>> preOrder(TreeNode<E> x);//前序遍历 先根遍历BA-C
     List<TreeNode<E>> postOrder(TreeNode<E> x);//后序遍历 后根遍历AC-B
-    List<TreeNode<E>> levelrder(TreeNode<E> x);//层次遍历 ABC-
+    List<TreeNode<E>> levelOrder(TreeNode<E> x);//层次遍历 ABC-
     //
 
 }

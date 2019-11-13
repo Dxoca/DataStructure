@@ -179,7 +179,6 @@ public class ConsistentHashIng1 {
             for (Map.Entry<Long, Node> entry : between.entrySet()) {
                 entry.setValue(nextNode);
             }
-
             System.out.println("要删除的是头结点");
         } else {
             long from = pre.lastKey();
