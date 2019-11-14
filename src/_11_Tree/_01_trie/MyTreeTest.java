@@ -3,13 +3,16 @@ package _11_Tree._01_trie;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 public class MyTreeTest {
     MyTree tree = new MyTree(new TreeNode("a"));
+    TreeNode<String> root = tree.getRoot();
 
     @Before
     public void insertChild() {
         //初始化跟节点
-        TreeNode<String> root = tree.getRoot();
+
         //要添加的节点
         TreeNode<String> b = new TreeNode("b");
         TreeNode<String> c = new TreeNode("c");
@@ -28,10 +31,10 @@ public class MyTreeTest {
         tree.insertChild(c, g);
         tree.insertChild(d, h);
         //e的子节点
-        TreeNode<String> j = new TreeNode("j");
         TreeNode<String> i = new TreeNode("i");
-        tree.insertChild(e, j);
+        TreeNode<String> j = new TreeNode("j");
         tree.insertChild(e, i);
+        tree.insertChild(i, j);
 
     }
 
@@ -76,8 +79,8 @@ public class MyTreeTest {
     @Test
     public void deleteChild() {
         System.out.println(tree.getSize());
-        System.out.println(tree.getFirstChild(tree.getFirstChild(tree.getRoot())));
-        tree.deleteChild(tree.getFirstChild(tree.getFirstChild(tree.getRoot())),0);
+        System.out.println(tree.getFirstChild(tree.getRoot()));
+        tree.deleteChild(tree.getFirstChild(tree.getRoot()), 0);
         System.out.println(tree.getSize());
     }
 
@@ -90,6 +93,14 @@ public class MyTreeTest {
     }
 
     @Test
-    public void levelRder() {
+    public void levelOrder() {
+        List<List<TreeNode<String>>> lists = tree.levelOrder(root);
+        for (List<TreeNode<String>> list : lists) {
+            for (TreeNode<String> node : list) {
+                System.out.print(node.key + "\t");
+            }
+            System.out.println("--------");
+
+        }
     }
 }

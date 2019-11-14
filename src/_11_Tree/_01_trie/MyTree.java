@@ -1,7 +1,9 @@
 package _11_Tree._01_trie;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 import static java.lang.Math.max;
 
@@ -110,29 +112,23 @@ public class MyTree<E> implements ITree<E> {
     }
 
     /**
-     * 删除x节点的孩子
+     * 删除x节点的孩子 有问题！！
      *
      * @param x
      * @param i
      */
     @Override
     public void deleteChild(TreeNode<E> x, int i) {
-        System.out.println("adad");
-        int n = x.children.size();
-        for (int j = n-1; j >=0; j--) {
-            if(x.children.get(i)!=null){
-
-            }
-            System.out.println(x.children.remove(j));
-            size--;
-        }
+//        int n = x.children.size();
+//        for (int j = n-1; j >=0; j--) {
+//            System.out.println(x.children.remove(j));
+//            size--;
+//        }
+        x.children.remove(i);
+        size--;
 
     }
 
-    /**
-     * @param x
-     * @return
-     */
     @Override
     public List<TreeNode<E>> preOrder(TreeNode<E> x) {
         return null;
@@ -145,12 +141,39 @@ public class MyTree<E> implements ITree<E> {
 
     /**
      * bfs
-     *
+     * 深搜用递归 宽搜用队列
+     * 队列 （队）弹一个 加n个（队）
+     * 两个游标 来分层对比 出的最后一个 那么下一层进的也是最后一个
      * @param x
      * @return
      */
     @Override
-    public List<TreeNode<E>> levelOrder(TreeNode<E> x) {
-        return null;
+    public List<List<TreeNode<E>>> levelOrder(TreeNode<E> x) {
+        List<List<TreeNode<E>>> res = new ArrayList<>();//list的list
+        Queue<TreeNode<E>> q = new LinkedList<>();
+        q.add(x);//初始化
+        TreeNode<E> last = x;//标记上一行的最末节点
+        TreeNode<E> nlast = null;//标记最新加入队列的节点
+        List<TreeNode<E>> l = new ArrayList<>();//第一行的list
+        res.add(l);
+
+        while (!q.isEmpty()) {
+            TreeNode<E> peek = q.peek();
+            //把即将弹出的节点的子节点加入队列
+            if (peek.children != null) {
+                for (TreeNode<E> n : peek.children) {
+                    q.add(n);
+                    nlast = n;
+                }
+            }
+            l.add(q.poll());//弹出 加入到当前层列表
+
+            if (peek == last && !q.isEmpty()) {//如果现在弹出的节点是最前标记的最后节点 就要切换列表
+                l = new ArrayList<>();//创建新的一层
+                res.add(l);
+                last = nlast;//更新游标
+            }
+        }
+        return res;
     }
 }
