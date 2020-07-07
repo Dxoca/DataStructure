@@ -52,9 +52,10 @@ public interface IBinarySearchTree<K, V> {
     void remove(K key);
 
     /**
-     * x的后继-比x大的第一个元素
+     * x的后继-  [比x大的第一个元素]
      * 1、其右边子树的最小值
      * 2、没有子树，则向上追溯，直到每个祖先节点是左孩子，返回这个祖先节点的父亲节点 它就是x的后继
+     * 后继：比她大的第一个元素
      *
      * @param x
      * @return
@@ -67,7 +68,7 @@ public interface IBinarySearchTree<K, V> {
      * @param x
      * @return
      */
-    K preDecessor(K x);
+    K predecessor(K x);
     Boolean isBalance();
 
     int getSize();

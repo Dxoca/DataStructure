@@ -9,13 +9,17 @@ import static java.lang.Math.max;
 
 public class MyTree<E> implements ITree<E> {
     private int size = 0;
-    private TreeNode root;
+    private TreeNode root;//用根来构造一棵树
 
     public MyTree(TreeNode root) {
         this.root = root;
         size++;
     }
 
+    /**
+     * 增删的时候维护size
+     * @return
+     */
     @Override
     public int getSize() {
         return size;
@@ -55,9 +59,10 @@ public class MyTree<E> implements ITree<E> {
         int i = children.indexOf(x);//找到x的索引
         try {
             return children.get(i + 1);
-        } catch (Exception e) {//如果x的最后一个孩子
+        } catch (Exception e) {//如果x的最后一个孩子 没有弟弟 返回空
             return null;
         }
+        //不tryCatch
 //        if(i==children.size()-1){
 //            return null;
 //        }else{
@@ -75,7 +80,7 @@ public class MyTree<E> implements ITree<E> {
     }
 
     /**
-     * 返回x的高度 DFS 递归算法
+     * 返回x节点的高度 DFS（深度优先遍历） 递归算法
      *
      * @param x
      * @return
@@ -101,7 +106,7 @@ public class MyTree<E> implements ITree<E> {
      */
     @Override
     public void insertChild(TreeNode<E> parent, TreeNode<E> child) {
-        if (parent.children == null) {
+        if (parent.children == null) {//没有子节点就创建子节点表
             parent.children = new ArrayList<>();
         }
         //双向确定关系
@@ -140,9 +145,10 @@ public class MyTree<E> implements ITree<E> {
     }
 
     /**
-     * bfs
-     * 深搜用递归 宽搜用队列
-     * 队列 （队）弹一个 加n个（队）
+     * bfs 宽搜
+     * 【深搜用递归 宽搜用队列】
+     *
+     * 队列： （从队中）弹一个 加n个（到队列）
      * 两个游标 来分层对比 出的最后一个 那么下一层进的也是最后一个
      * @param x
      * @return
