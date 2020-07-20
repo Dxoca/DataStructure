@@ -246,11 +246,11 @@ public class BinarySearchTree<K, V> implements IBinarySearchTree<K, V> {
     }
 
     protected int getHeight(BSTNode node) {
-//        if (node == null) return 0;
-//        int l = getHeight(node.left);
-//        int r = getHeight(node.right);
-//        return 1 + Math.max(l, r);
-        return node.height;
+        if (node == null) return 0;
+        int l = getHeight(node.left);
+        int r = getHeight(node.right);
+        return 1 + Math.max(l, r);
+//        return node.height;
     }
 
     @Override

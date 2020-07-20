@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="338a2dba-78b2-4d89-9acc-b79dc3bc145d" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/IBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/IBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/ITree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/ITree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,23 +122,7 @@
       <recent name="E:\myCode\DataStructure\src\_09_Linear\Stack_QueuePractice" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.max">
-    <configuration name="BinarySearchTreeTest.getSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_11_Tree._01_trie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
-      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="getSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.remove">
     <configuration name="BinarySearchTreeTest.inOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructure" />
       <extension name="coverage">
@@ -190,13 +187,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinarySearchTreeTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_Tree._01_trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
+      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinarySearchTreeTest.remove" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.inOrder" />
         <item itemvalue="JUnit.BinarySearchTreeTest.max" />
         <item itemvalue="JUnit.BinarySearchTreeTest.min" />
         <item itemvalue="JUnit.BinarySearchTreeTest.lookupValue" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.inOrder" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.getSize" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +269,7 @@
       <workItem from="1594954621206" duration="14500000" />
       <workItem from="1595052102010" duration="4541000" />
       <workItem from="1595210188507" duration="20334000" />
-      <workItem from="1595235425141" duration="290000" />
+      <workItem from="1595235425141" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="up data">
       <created>1569475797568</created>
@@ -419,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595234726229</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java">
+      <created>1595235908366</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1595235908366</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -433,6 +453,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="up data" />
@@ -528,10 +559,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="128" y="89" key="MergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595234807289" />
-    <state x="1053" y="304" key="MultipleFileMergeDialog" timestamp="1595234810764">
+    <state x="1053" y="304" key="MultipleFileMergeDialog" timestamp="1595235866929">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1053" y="304" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595234810764" />
+    <state x="1053" y="304" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595235866929" />
     <state x="1199" y="265" key="RollbackChangesDialog" timestamp="1595235311337">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -544,10 +575,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="686" y="256" key="VCS.ChangeListViewerDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594954768930" />
-    <state x="1017" y="274" key="Vcs.Push.Dialog.v2" timestamp="1595234736327">
+    <state x="1017" y="274" key="Vcs.Push.Dialog.v2" timestamp="1595235912397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1017" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595234736327" />
+    <state x="1017" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595235912397" />
     <state x="104" y="90" width="1707" height="932" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594980440861">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -556,10 +587,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1055" y="470" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1594979589738" />
-    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595235369539">
+    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595235854783">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595235369539" />
+    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595235854783" />
     <state x="1174" y="269" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594980361302">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

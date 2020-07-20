@@ -55,6 +55,12 @@ public class BinarySearchTreeTest {
 
     @Test
     public void remove() {
+        inOrder();
+        bst.remove(16);
+        bst.remove(25);
+        bst.remove(14);
+        bst.remove(1);
+        inOrder();
     }
 
     @Test
