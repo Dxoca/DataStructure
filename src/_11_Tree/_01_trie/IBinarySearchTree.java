@@ -13,7 +13,7 @@ public interface IBinarySearchTree<K, V> {
      * @param v 值
      * @return
      */
-    BinarySearchTree<K, V>.Node<K, V> insert(K k, V v);
+    BSTNode<K, V> insert(K k, V v);
 
     /**
      * 中序遍历 处理中序遍历中的每个元素的函数
@@ -35,14 +35,14 @@ public interface IBinarySearchTree<K, V> {
      *
      * @return
      */
-    V min();
+    K min();
 
     /**
      * 获取最大关键字
      *
      * @return
      */
-    V max();
+    K max();
 
     /**
      * 移除关键字对应的节点
@@ -69,10 +69,27 @@ public interface IBinarySearchTree<K, V> {
      * @return
      */
     K predecessor(K x);
+
     Boolean isBalance();
 
+    /**
+     * 返回节点数
+     *
+     * @return
+     */
     int getSize();
+
+    /**
+     * 高度
+     *
+     * @return
+     */
     int getHeight();
-    List<List<BinarySearchTree<K,V>.Node<K,V>>> levelOrder();
+
+    /**
+     * 层次遍历
+     * @return
+     */
+    List<List<BSTNode<K, V>>> levelOrder();
 
 }
