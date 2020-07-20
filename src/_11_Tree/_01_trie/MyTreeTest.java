@@ -68,7 +68,7 @@ public class MyTreeTest {
 
     @Test
     public void getHeight() {
-
+        System.out.println(tree.getHeight());
     }
 
     @Test

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="338a2dba-78b2-4d89-9acc-b79dc3bc145d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/arquillianContainers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BSTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/IBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/IBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/ITree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/ITree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTreeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian TestNG Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>List</find>
+      <find>T</find>
+      <find>Object</find>
+      <find>ListNode</find>
+      <find>keySet</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1enPv8LvnKeg6T7jdsDyyfcVFiU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian TestNG" value="org.jboss.arquillian.testng.Arquillian" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_09_Linear/Stack_QueuePractice" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/_01_MyArrayListTest.java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="_11_Tree._01_trie" />
+      <recent name="_10_Hash" />
+      <recent name="_09_Linear.list" />
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="org.jboss.arquillian.testng.Arquillian" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myCode\DataStructure\src\_09_Linear\Stack_QueuePractice" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.max">
+    <configuration name="BinarySearchTreeTest.getSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_Tree._01_trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
+      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="getSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.inOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_Tree._01_trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
+      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="inOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.lookupValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_Tree._01_trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
+      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="lookupValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.max" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_Tree._01_trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
+      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="max" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.min" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_Tree._01_trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
+      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="min" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BinarySearchTreeTest.max" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.min" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.lookupValue" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.inOrder" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.getSize" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="338a2dba-78b2-4d89-9acc-b79dc3bc145d" name="Default Changelist" comment="" />
+      <created>1569246337980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569246337980</updated>
+      <workItem from="1569246339609" duration="602000" />
+      <workItem from="1569249237461" duration="3657000" />
+      <workItem from="1569252923052" duration="2626000" />
+      <workItem from="1569301074847" duration="7093000" />
+      <workItem from="1569334759982" duration="1287000" />
+      <workItem from="1569340551496" duration="362000" />
+      <workItem from="1569385178960" duration="15475000" />
+      <workItem from="1569472703132" duration="13573000" />
+      <workItem from="1569559849596" duration="8853000" />
+      <workItem from="1569581683607" duration="8737000" />
+      <workItem from="1569757635397" duration="1730000" />
+      <workItem from="1570598562170" duration="6470000" />
+      <workItem from="1570795419549" duration="9036000" />
+      <workItem from="1570873485733" duration="637000" />
+      <workItem from="1570887646838" duration="6888000" />
+      <workItem from="1570974856174" duration="5081000" />
+      <workItem from="1571047975701" duration="7487000" />
+      <workItem from="1571106411614" duration="6221000" />
+      <workItem from="1571123176668" duration="860000" />
+      <workItem from="1571124128644" duration="57000" />
+      <workItem from="1571124310779" duration="751000" />
+      <workItem from="1571308367921" duration="11357000" />
+      <workItem from="1571373765398" duration="4434000" />
+      <workItem from="1571663623389" duration="6602000" />
+      <workItem from="1571719062555" duration="8114000" />
+      <workItem from="1571804078549" duration="347000" />
+      <workItem from="1571841022636" duration="1717000" />
+      <workItem from="1571892782880" duration="2145000" />
+      <workItem from="1572012382376" duration="4179000" />
+      <workItem from="1572060751289" duration="14935000" />
+      <workItem from="1572495246464" duration="1283000" />
+      <workItem from="1572520071895" duration="4693000" />
+      <workItem from="1572965364081" duration="3469000" />
+      <workItem from="1573018519216" duration="8505000" />
+      <workItem from="1573182430510" duration="11244000" />
+      <workItem from="1573295775717" duration="4848000" />
+      <workItem from="1573373182283" duration="8247000" />
+      <workItem from="1573463721623" duration="4853000" />
+      <workItem from="1573524711659" duration="31796000" />
+      <workItem from="1573705107841" duration="11943000" />
+      <workItem from="1574080039930" duration="597000" />
+      <workItem from="1575781088013" duration="2727000" />
+      <workItem from="1582716238642" duration="575000" />
+      <workItem from="1594954621206" duration="14500000" />
+      <workItem from="1595052102010" duration="4541000" />
+      <workItem from="1595210188507" duration="6389000" />
+    </task>
+    <task id="LOCAL-00001" summary="up data">
+      <created>1569475797568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569475797568</updated>
+    </task>
+    <task id="LOCAL-00002" summary="up data">
+      <created>1569498343030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569498343030</updated>
+    </task>
+    <task id="LOCAL-00003" summary="泛化 和 迭代">
+      <created>1569584967662</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569584967663</updated>
+    </task>
+    <task id="LOCAL-00004" summary="桶排序">
+      <created>1570809347690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570809347691</updated>
+    </task>
+    <task id="LOCAL-00005" summary="删除重复节点 两种方法">
+      <created>1570893855458</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570893855459</updated>
+    </task>
+    <task id="LOCAL-00006" summary="倒数第k个节点">
+      <created>1570979224592</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570979224592</updated>
+    </task>
+    <task id="LOCAL-00007" summary="倒数第k个节点">
+      <created>1570979285442</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570979285442</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ListApi">
+      <created>1570979309286</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570979309286</updated>
+    </task>
+    <task id="LOCAL-00009" summary="基准值将链表分割">
+      <created>1571107523109</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571107523109</updated>
+    </task>
+    <task id="LOCAL-00010" summary="链表加法">
+      <created>1571112160310</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571112160310</updated>
+    </task>
+    <task id="LOCAL-00011" summary="冲冲冲">
+      <created>1571378179831</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571378179832</updated>
+    </task>
+    <task id="LOCAL-00012" summary="两个栈实现一个队列">
+      <created>1572064602549</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572064602549</updated>
+    </task>
+    <task id="LOCAL-00013" summary="两个栈实现 栈的排序">
+      <created>1572096929957</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572096929958</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Queue">
+      <created>1572105570536</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572105570536</updated>
+    </task>
+    <task id="LOCAL-00015" summary="HashMap">
+      <created>1572968518486</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572968518486</updated>
+    </task>
+    <task id="LOCAL-00016" summary="HashMap">
+      <created>1573183716318</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573183716318</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Hash">
+      <created>1573193770445</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573193770445</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Hash">
+      <created>1573193998091</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573193998091</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Hash">
+      <created>1573561138080</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1573561138080</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Tree">
+      <created>1573632630820</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573632630820</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Tree">
+      <created>1573736610426</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1573736610426</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Tree">
+      <created>1582716785558</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1582716785558</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="up data" />
+    <MESSAGE value="泛化 和 迭代" />
+    <MESSAGE value="桶排序" />
+    <MESSAGE value="删除重复节点 两种方法" />
+    <MESSAGE value="倒数第k个节点" />
+    <MESSAGE value="ListApi" />
+    <MESSAGE value="基准值将链表分割" />
+    <MESSAGE value="链表加法" />
+    <MESSAGE value="冲冲冲" />
+    <MESSAGE value="两个栈实现一个队列" />
+    <MESSAGE value="两个栈实现 栈的排序" />
+    <MESSAGE value="Queue" />
+    <MESSAGE value="HashMap" />
+    <MESSAGE value="Hash" />
+    <MESSAGE value="Tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tree" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1000" y="236" key="#Arquillian_Containers" timestamp="1594980583861">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1000" y="236" key="#Arquillian_Containers/0.0.1920.1080@0.0.1920.1080" timestamp="1594980583861" />
+    <state x="958" y="199" key="#BinarySearchTreeTest.insert" timestamp="1594980588978">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="958" y="199" key="#BinarySearchTreeTest.insert/0.0.1920.1080@0.0.1920.1080" timestamp="1594980588978" />
+    <state x="851" y="143" key="#MyTreeTest.deleteChild" timestamp="1594980537207">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="851" y="143" key="#MyTreeTest.deleteChild/0.0.1920.1080@0.0.1920.1080" timestamp="1594980537207" />
+    <state x="1264" y="279" key="#com.intellij.ide.util.MemberChooser" timestamp="1594977816931">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1264" y="279" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594977816931" />
+    <state x="1082" y="338" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1595060421095">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1082" y="338" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595060421095" />
+    <state x="1138" y="332" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1594980574701">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1138" y="332" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980574701" />
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1594955746027">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594955746027" />
+    <state x="1247" y="330" key="EnvironmentVariablesDialog" timestamp="1594980582346">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1247" y="330" key="EnvironmentVariablesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980582346" />
+    <state width="1218" height="265" key="GridCell.Tab.0.bottom" timestamp="1595210591088">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
+    <state width="1218" height="265" key="GridCell.Tab.0.center" timestamp="1595210591088">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
+    <state width="1218" height="265" key="GridCell.Tab.0.left" timestamp="1595210591088">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
+    <state width="1218" height="265" key="GridCell.Tab.0.right" timestamp="1595210591088">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
+    <state width="1218" height="265" key="GridCell.Tab.1.bottom" timestamp="1595210591419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
+    <state width="1218" height="265" key="GridCell.Tab.1.center" timestamp="1595210591419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
+    <state width="1218" height="265" key="GridCell.Tab.1.left" timestamp="1595210591419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
+    <state width="1218" height="265" key="GridCell.Tab.1.right" timestamp="1595210591419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1218" height="265" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
+    <state x="686" y="256" key="VCS.ChangeListViewerDialog" timestamp="1594954768930">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="686" y="256" key="VCS.ChangeListViewerDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594954768930" />
+    <state x="104" y="90" width="1707" height="932" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594980440861">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="104" y="90" width="1707" height="932" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980440861" />
+    <state x="1055" y="470" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1594979589738">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1055" y="470" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1594979589738" />
+    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594954754139">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1594954754139" />
+    <state x="1174" y="269" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594980361302">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1174" y="269" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980361302" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/_09_Linear/list/DoubleLinkListTest.java</url>
+          <line>57</line>
+          <properties class="_09_Linear.list.DoubleLinkListTest" method="indexOf">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/_09_Linear/list/MyArrayListTest.java</url>
+          <line>7</line>
+          <properties class="_09_Linear.list.MyArrayListTest" method="add">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/_09_Linear/ListPractice/RemoveRepetitionNode.java</url>
+          <line>14</line>
+          <properties class="_09_Linear.ListPractice.RemoveRepetitionNode" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTree.java</url>
+          <line>120</line>
+          <properties class="_11_Tree._01_trie.MyTree" method="deleteChild">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTreeTest.java</url>
+          <line>95</line>
+          <properties class="_11_Tree._01_trie.MyTreeTest" method="levelOrder">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_09_Linear/list/MyArrayList.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_09_Linear/Stack_QueuePractice/thereStack.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DataStructure$SingleLinkedListTest_delete.ic" NAME="SingleLinkedListTest.delete Coverage Results" MODIFIED="1569421245475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>_09_Linear.list.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -12,7 +12,7 @@ public interface ITree<E> {
 
     void insertChild(TreeNode<E> x,TreeNode<E> child);//插入子节点（孩子）
     void deleteChild(TreeNode<E>  x,int i);//删孩子 节点编号
-    List<TreeNode<E>> preOrder(TreeNode<E> x);//前序遍历 先根遍历BA-C
+    List<TreeNode<E>> preOrder(TreeNode<E> x);//前序遍历 先根遍历BA-C 先打印根
     List<TreeNode<E>> postOrder(TreeNode<E> x);//后序遍历 后根遍历AC-B
     List<List<TreeNode<E>>> levelOrder(TreeNode<E> x);//层次遍历 ABC-
     //
