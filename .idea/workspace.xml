@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338a2dba-78b2-4d89-9acc-b79dc3bc145d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/arquillianContainers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BSTNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTreeTest.java" afterDir="false" />
+    <list default="true" id="338a2dba-78b2-4d89-9acc-b79dc3bc145d" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/IBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/IBinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/ITree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/ITree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/_01_MyArrayListTest.java" />
   </component>
   <component name="RecentsManager">
@@ -256,7 +255,8 @@
       <workItem from="1582716238642" duration="575000" />
       <workItem from="1594954621206" duration="14500000" />
       <workItem from="1595052102010" duration="4541000" />
-      <workItem from="1595210188507" duration="6389000" />
+      <workItem from="1595210188507" duration="20334000" />
+      <workItem from="1595235425141" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="up data">
       <created>1569475797568</created>
@@ -412,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582716785558</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Tree">
+      <created>1595234726229</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1595234726229</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -443,7 +450,10 @@
     <MESSAGE value="HashMap" />
     <MESSAGE value="Hash" />
     <MESSAGE value="Tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tree" />
+    <MESSAGE value="updata" />
+    <MESSAGE value="update" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1000" y="236" key="#Arquillian_Containers" timestamp="1594980583861">
@@ -470,6 +480,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1138" y="332" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980574701" />
+    <state x="829" y="53" key="CommitChangelistDialog2" timestamp="1595235509588">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="829" y="53" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1595235509588" />
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1594955746027">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -478,42 +492,62 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1247" y="330" key="EnvironmentVariablesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980582346" />
-    <state width="1218" height="265" key="GridCell.Tab.0.bottom" timestamp="1595210591088">
+    <state width="940" height="263" key="GridCell.Tab.0.bottom" timestamp="1595235381743">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
-    <state width="1218" height="265" key="GridCell.Tab.0.center" timestamp="1595210591088">
+    <state width="940" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381743" />
+    <state width="940" height="263" key="GridCell.Tab.0.center" timestamp="1595235381742">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
-    <state width="1218" height="265" key="GridCell.Tab.0.left" timestamp="1595210591088">
+    <state width="940" height="263" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381742" />
+    <state width="940" height="263" key="GridCell.Tab.0.left" timestamp="1595235381742">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
-    <state width="1218" height="265" key="GridCell.Tab.0.right" timestamp="1595210591088">
+    <state width="940" height="263" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381742" />
+    <state width="940" height="263" key="GridCell.Tab.0.right" timestamp="1595235381743">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591088" />
-    <state width="1218" height="265" key="GridCell.Tab.1.bottom" timestamp="1595210591419">
+    <state width="940" height="263" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381743" />
+    <state width="940" height="263" key="GridCell.Tab.1.bottom" timestamp="1595235381741">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
-    <state width="1218" height="265" key="GridCell.Tab.1.center" timestamp="1595210591419">
+    <state width="940" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381741" />
+    <state width="940" height="263" key="GridCell.Tab.1.center" timestamp="1595235381739">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
-    <state width="1218" height="265" key="GridCell.Tab.1.left" timestamp="1595210591419">
+    <state width="940" height="263" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381739" />
+    <state width="940" height="263" key="GridCell.Tab.1.left" timestamp="1595235381737">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
-    <state width="1218" height="265" key="GridCell.Tab.1.right" timestamp="1595210591419">
+    <state width="940" height="263" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381737" />
+    <state width="940" height="263" key="GridCell.Tab.1.right" timestamp="1595235381740">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1218" height="265" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595210591419" />
+    <state width="940" height="263" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381740" />
+    <state x="128" y="89" key="MergeDialog" timestamp="1595234807289">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="128" y="89" key="MergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595234807289" />
+    <state x="1053" y="304" key="MultipleFileMergeDialog" timestamp="1595234810764">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1053" y="304" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595234810764" />
+    <state x="1199" y="265" key="RollbackChangesDialog" timestamp="1595235311337">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1199" y="265" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595235311337" />
+    <state x="956" y="187" key="SettingsEditor" timestamp="1595235207780">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="956" y="187" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1595235207780" />
     <state x="686" y="256" key="VCS.ChangeListViewerDialog" timestamp="1594954768930">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="686" y="256" key="VCS.ChangeListViewerDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594954768930" />
+    <state x="1017" y="274" key="Vcs.Push.Dialog.v2" timestamp="1595234736327">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1017" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595234736327" />
     <state x="104" y="90" width="1707" height="932" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594980440861">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -522,10 +556,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1055" y="470" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1594979589738" />
-    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594954754139">
+    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595235369539">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1594954754139" />
+    <state x="732" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595235369539" />
     <state x="1174" y="269" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594980361302">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -560,8 +594,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/_11_Tree/_01_trie/MyTree.java</url>
-          <line>120</line>
-          <properties class="_11_Tree._01_trie.MyTree" method="deleteChild">
+          <line>125</line>
+          <properties class="_11_Tree._01_trie.MyTree">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="11" />

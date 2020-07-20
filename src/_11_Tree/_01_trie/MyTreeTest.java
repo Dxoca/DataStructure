@@ -12,7 +12,7 @@ public class MyTreeTest {
     @Before
     public void insertChild() {
         //初始化跟节点
-
+ 
         //要添加的节点
         TreeNode<String> b = new TreeNode("b");
         TreeNode<String> c = new TreeNode("c");

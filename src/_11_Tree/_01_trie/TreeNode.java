@@ -3,12 +3,12 @@ package _11_Tree._01_trie;
 import java.util.List;
 
 public class TreeNode<E> {
-    public E key;//data
-    public TreeNode<E> parent;
-    public List<TreeNode<E>> children;
+    public E key;//data //数据
+    public TreeNode<E> parent;// 父节点
+    public List<TreeNode<E>> children;//子节点 可以看成一个链表
 
     /**
-     * 初始化它的key和 定义父节点
+     * 初始化它的key和 定义(指向父亲)父节点
      *
      * @param key
      * @param parent
