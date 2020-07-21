@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="338a2dba-78b2-4d89-9acc-b79dc3bc145d" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java">
+    <list default="true" id="338a2dba-78b2-4d89-9acc-b79dc3bc145d" name="Default Changelist" comment="update remove">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_Tree/_01_trie/BinarySearchTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/_01_MyArrayListTest.java" />
   </component>
   <component name="RecentsManager">
@@ -111,18 +112,18 @@
       <recent name="_09_Linear.list" />
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myCode\DataStructure\src\_09_Linear\Stack_QueuePractice" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="org.jboss.arquillian.testng.Arquillian" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\myCode\DataStructure\src\_09_Linear\Stack_QueuePractice" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.remove">
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.successor">
     <configuration name="BinarySearchTreeTest.inOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructure" />
       <extension name="coverage">
@@ -134,22 +135,6 @@
       <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
       <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
       <option name="METHOD_NAME" value="inOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeTest.lookupValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_11_Tree._01_trie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
-      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="lookupValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,13 +188,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinarySearchTreeTest.successor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_Tree._01_trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_11_Tree._01_trie" />
+      <option name="MAIN_CLASS_NAME" value="_11_Tree._01_trie.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="successor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinarySearchTreeTest.successor" />
         <item itemvalue="JUnit.BinarySearchTreeTest.remove" />
         <item itemvalue="JUnit.BinarySearchTreeTest.inOrder" />
         <item itemvalue="JUnit.BinarySearchTreeTest.max" />
         <item itemvalue="JUnit.BinarySearchTreeTest.min" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.lookupValue" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +270,8 @@
       <workItem from="1594954621206" duration="14500000" />
       <workItem from="1595052102010" duration="4541000" />
       <workItem from="1595210188507" duration="20334000" />
-      <workItem from="1595235425141" duration="1281000" />
+      <workItem from="1595235425141" duration="2850000" />
+      <workItem from="1595295127216" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="up data">
       <created>1569475797568</created>
@@ -439,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595235908366</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update remove">
+      <created>1595237078000</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1595237078000</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -464,6 +473,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="up data" />
@@ -484,7 +494,8 @@
     <MESSAGE value="updata" />
     <MESSAGE value="update" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/libraries/Maven__Arquillian_JUnit_Release.xml&#10;#&#9;src/_11_Tree/_01_trie/BinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/IBinarySearchTree.java&#10;#&#9;src/_11_Tree/_01_trie/ITree.java" />
+    <MESSAGE value="update remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="update remove" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1000" y="236" key="#Arquillian_Containers" timestamp="1594980583861">
@@ -523,22 +534,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1247" y="330" key="EnvironmentVariablesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980582346" />
-    <state width="940" height="263" key="GridCell.Tab.0.bottom" timestamp="1595235381743">
+    <state x="1264" y="311" key="FileChooserDialogImpl" timestamp="1595295182902">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="940" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381743" />
-    <state width="940" height="263" key="GridCell.Tab.0.center" timestamp="1595235381742">
+    <state x="1264" y="311" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1595295182902" />
+    <state width="1875" height="274" key="GridCell.Tab.0.bottom" timestamp="1595237122022">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="940" height="263" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381742" />
-    <state width="940" height="263" key="GridCell.Tab.0.left" timestamp="1595235381742">
+    <state width="1875" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595237122022" />
+    <state width="1875" height="274" key="GridCell.Tab.0.center" timestamp="1595237122022">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="940" height="263" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381742" />
-    <state width="940" height="263" key="GridCell.Tab.0.right" timestamp="1595235381743">
+    <state width="1875" height="274" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595237122022" />
+    <state width="1875" height="274" key="GridCell.Tab.0.left" timestamp="1595237122022">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="940" height="263" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595235381743" />
+    <state width="1875" height="274" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595237122022" />
+    <state width="1875" height="274" key="GridCell.Tab.0.right" timestamp="1595237122022">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="274" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595237122022" />
     <state width="940" height="263" key="GridCell.Tab.1.bottom" timestamp="1595235381741">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -559,26 +574,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="128" y="89" key="MergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595234807289" />
-    <state x="1053" y="304" key="MultipleFileMergeDialog" timestamp="1595235866929">
+    <state x="1053" y="304" key="MultipleFileMergeDialog" timestamp="1595237112469">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1053" y="304" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595235866929" />
+    <state x="1053" y="304" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595237112469" />
     <state x="1199" y="265" key="RollbackChangesDialog" timestamp="1595235311337">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1199" y="265" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595235311337" />
-    <state x="956" y="187" key="SettingsEditor" timestamp="1595235207780">
+    <state x="956" y="187" key="SettingsEditor" timestamp="1595295187846">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="956" y="187" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1595235207780" />
+    <state x="956" y="187" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1595295187846" />
     <state x="686" y="256" key="VCS.ChangeListViewerDialog" timestamp="1594954768930">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="686" y="256" key="VCS.ChangeListViewerDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594954768930" />
-    <state x="1017" y="274" key="Vcs.Push.Dialog.v2" timestamp="1595235912397">
+    <state x="1017" y="274" key="Vcs.Push.Dialog.v2" timestamp="1595237082419">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1017" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595235912397" />
+    <state x="1017" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595237082419" />
     <state x="104" y="90" width="1707" height="932" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594980440861">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -595,6 +610,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1174" y="269" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594980361302" />
+    <state x="1162" y="416" width="645" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1595295184959">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1162" y="416" width="645" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595295184959" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

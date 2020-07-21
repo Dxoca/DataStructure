@@ -220,14 +220,44 @@ public class BinarySearchTree<K, V> implements IBinarySearchTree<K, V> {
         }
     }
 
+    /**
+     * x的后继-比x大的第一个元素
+     * 1、其右边子树的最小值
+     * 2、没有子树，则向上追溯，直到每个祖先节点是左孩子，返回这个祖先节点的父亲节点 它就是x的后继
+     *
+     * @param x
+     * @return
+     */
     @Override
     public K successor(K x) {
-        return null;
+        BSTNode<K, V> xNode = lookupNode(x);//找到节点
+        if (xNode == null) return null;
+        if (xNode.right != null) return minNode(xNode.right).key;
+        BSTNode<K, V> yNode = xNode.parent;
+        while (yNode != null && xNode != yNode.left) {//找到该节点是 父亲节点的 做孩子。则其父亲
+            xNode = yNode;//不满足就上推
+            yNode = yNode.parent;
+        }
+        return yNode == null ? null : yNode.key;
     }
 
+    /**
+     * 前驱 返回第一个比它小的元素
+     *
+     * @param x
+     * @return
+     */
     @Override
     public K predecessor(K x) {
-        return null;
+        BSTNode<K, V> xNode = lookupNode(x);
+        if (xNode == null) return null;
+        if (xNode.left != null) return maxNode(xNode.left).key;//有左子树 返回左子树的最小值
+        BSTNode<K, V> yNode = xNode.parent;
+        while (yNode != null && xNode.isLeftChild) {//找到是右孩子的 父亲节点 就是比它小的 第一个元素
+            xNode = yNode;
+            yNode = yNode.parent;
+        }
+        return yNode==null?null:yNode.key;
     }
 
     @Override

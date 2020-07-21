@@ -65,6 +65,7 @@ public class BinarySearchTreeTest {
 
     @Test
     public void successor() {
+        System.out.println(bst.successor(3));
     }
 
     @Test
