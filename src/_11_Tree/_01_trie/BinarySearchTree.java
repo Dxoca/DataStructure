@@ -1,8 +1,7 @@
 package _11_Tree._01_trie;
 //https://github.com/Dxoca/Algorithm_LanQiao/blob/master/src/main/java/org/lanqiao/algo/elementary/_11_tree/BinarySearchTree.java
 
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.Consumer;
 
 public class BinarySearchTree<K, V> implements IBinarySearchTree<K, V> {
@@ -276,16 +275,49 @@ public class BinarySearchTree<K, V> implements IBinarySearchTree<K, V> {
     }
 
     protected int getHeight(BSTNode node) {
-//        if (node == null) return 0;
-//        int l = getHeight(node.left);
-//        int r = getHeight(node.right);
-//        return 1 + Math.max(l, r);
-        return node.height;
+        if (node == null) return 0;
+        int l = getHeight(node.left);
+        int r = getHeight(node.right);
+        return 1 + Math.max(l, r);
+//        return node.height;
     }
 
     @Override
     public List<List<BSTNode<K, V>>> levelOrder() {
-        return null;
+        root.num = 1;//节点按实际位置编号 有虚节点的位置
+        return levelOrder(root);
+    }
+
+    private List<List<BSTNode<K, V>>> levelOrder(BSTNode x) {
+        //int num=x.num;// 累进的编号
+        List<List<BSTNode<K, V>>> res = new ArrayList<>();
+        Queue<BSTNode<K, V>> q = new LinkedList<>();
+        q.add(x);
+        BSTNode<K, V> last = x;
+        BSTNode<K, V> nLast = null;
+        List<BSTNode<K, V>> l = new ArrayList<>();
+        res.add(l);
+        while (!q.isEmpty()) {
+            BSTNode<K, V> peek = q.peek();
+            //把即将弹出的节点的子节点加入队列
+            if (peek.left != null) {
+                peek.left.num = peek.num * 2;
+                q.add(peek.left);
+                nLast = peek.left;
+            }
+            if (peek.right != null) {
+                peek.right.num = peek.num * 2 + 1;
+                q.add(peek.right);
+                nLast = peek.right;
+            }
+            l.add(q.poll());//弹出，加入当前层列
+            if (peek == last && !q.isEmpty()) {///如果现在弹出的节点是之前标记的最后节点，就要换列表
+                l = new ArrayList<>();
+                res.add(l);
+                last = nLast;
+            }
+        }
+        return res;
     }
 
     //Comparator接口 独立的类中实现比较 不强制进行自然排序，可以指定排序顺序。

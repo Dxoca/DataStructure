@@ -3,6 +3,8 @@ package _11_Tree._01_trie;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 public class BinarySearchTreeTest {
     BinarySearchTree<Integer, Integer> bst = new BinarySearchTree<>();
 
@@ -89,5 +91,12 @@ public class BinarySearchTreeTest {
 
     @Test
     public void levelOrder() {
+        List<List<BSTNode<Integer, Integer>>> list = bst.levelOrder();
+        for (List<BSTNode<Integer, Integer>> l:list) {
+            System.out.println();
+            for (BSTNode<Integer,Integer> r:l) {
+                System.out.print(r.key+" ");
+            }
+        }
     }
 }
